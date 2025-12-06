@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root{
 
 --text: #120116;
@@ -7,13 +13,45 @@
 --accent: #3ef8c7;
 
 --primary-light: oklch(from var(--primary) l c h / 0.5 );
+
+--padding : 1rem;
+
 }
-.encabezado{
+.header{
 
   background-color: var(--primary);
   border-radius: 2px;
   box-shadow: 1px 1px 1px rgba(0.2,0.2,0.2,0.3);
+  padding: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3)
 
+}
+
+.header__title{
+
+  font-size: 2rem;
+  font-weight: bold; /*pone el texto en negrita*/
+  color:#fef9ff;
+
+}
+
+.header__nav{
+
+  display: flex;
+  gap: var(--padding);
+}
+
+.nav__link{
+
+  text-decoration: none; /*saca lo subrayado*/
+  color: #fef9ff;
+}
+
+.nav__link.active{
+  color: var(--text)
 }
 
 .btn{
@@ -37,9 +75,17 @@
 }
  .popup_container{
   background-color: var(--accent);
-  padding: 1rem;
+  padding: var(--padding);
   border-radius: 5px;
   font-size: 1.5rem;
  }
+
+.main{
+  padding: var(--padding);
+}
+
+.footer{
+  padding: var(--padding)
+}
 
 

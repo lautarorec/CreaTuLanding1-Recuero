@@ -1,6 +1,7 @@
 import Header from "./componentes/Header"
 import Main from "./componentes/Main"
 import Footer from "./componentes/Footer"
+import {Routes, Route } from "react-router-dom"
 
 
 import './App.css'
@@ -26,8 +27,22 @@ function App() {
     <>
     
       <Header />
+     <main className="main">
+      
+     {/* <Main /> */}
+     <Routes>
 
-      <Main />
+
+      <Route path="/" element={<Main/> } />
+
+      <Route path="/productos" element={<h2> Productos </h2> } />
+
+      <Route path="/cat" element={ <h2> Categoria </h2> } />
+
+
+     </Routes>
+
+     </main>
     
       <Footer />
 

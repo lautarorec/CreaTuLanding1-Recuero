@@ -1,27 +1,10 @@
-import { useState } from "react"
 
-function Contador() {
-    //variable comun
-    /* let contador = 0 */
-
-    //variable reactiva
-    /* const [MiEstado,setMiEstado] = useState(ValorInicial) */
-    const [contador, setContador] = useState(0)
-    const handleClick = () => {
-        /*const miParrafo = document.querySelector("#parrafo")
-        miParrafo.innerText = `Contador: ${contador++}`*/
-
-        //contador = contador + 1
-        
-        setContador(contador + 1)
-        console.log(contador)
-
-    }
+function Contador(props) {
 
   return (
     <div>
-        <p id="parrafo">Contador: {contador}</p>
-        <button onClick = {handleClick} >Incrementar</button>
+        <p id="parrafo">Contador: {props.cont}</p>
+        <button onClick = {props.hC}>Incrementar</button>
     </div>
   )
 }

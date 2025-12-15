@@ -4,8 +4,7 @@ function Footer() {
   return (
      <footer className="footer">
       
-      <p>Copyright &copy; 2026</p>
-      <Button nombre = "Final"/>
+      <p>Gracias por visitarnos &copy; 2026</p>
 
     </footer>
   )

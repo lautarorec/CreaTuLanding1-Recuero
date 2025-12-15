@@ -9,11 +9,9 @@ function Header(){
 
         <header className="header">
 
-            <h1 className="header__title">Mi PRIMER Aplicación</h1>
+            <h1 className="header__title">Nube de Válvulas</h1>
 
-            <Routes>
-                <Route path="/productos" element={<input type="text" placeholder="Ej.: Valvulas"/>}/>
-            </Routes>
+           
 
             <nav className="header__nav nav">
 
@@ -26,7 +24,13 @@ function Header(){
                 {/*<a href="/cat-1">cat1</a>*/}
                 <NavLink to="/cat" className="nav__link">cat</NavLink>
 
+                <NavLink to="/detalles" className="nav__link">detalles</NavLink>
+
+
+
             </nav>
+            
+
 
         </header>
 
